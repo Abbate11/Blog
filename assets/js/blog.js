@@ -1,15 +1,14 @@
 // get user inputs from localStorage and display on posts.html
-// document.body.onload = displayPost;
+// document.body.onload = displayNewPost;
 
-let postContent = JSON.parse(localStorage.getItem('userPost'));
-let newPost = document.createElement('article');
-let newTitle = document.createElement('h2');
-let newUsername = document.createElement('h4');
-let newContent = document.createElement('p');
+
 
 
 const displayNewPost = function () {
-    
+    const postContent = JSON.parse(localStorage.getItem('userPost'));
+    const section = document.querySelector('#new-posts');
+    const article = document.createElement('article')
+    document.section.appendChild('article');
 }
 
 displayNewPost()

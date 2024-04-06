@@ -15,21 +15,31 @@ const submitBtn = document.querySelector('#submit');
 
 
 
+// preventing form send while working on it
+
 
 // create click listener for submit button to save username, title and content to local storage
-submitBtn.addEventListener('click', function storeInput() {
-     if (usernameInput.value != '') {
-          localStorage.setItem('Username', usernameInput.value);
-     } else {
+submitBtn.addEventListener('click', function storeInfo() {
+     const userPost =  {
+          Username: usernameInput.value,
+          Title: titleInput.value,
+          Content: contentInput.value,
+     }
+
+     localStorage.setItem('userPost', JSON.stringify(userPost));
+});
+
+
+
+
+// alert if any form section is left blank
+submitBtn.addEventListener('click', function sendAlert() {
+     if (usernameInput.value === '') {
           alert('Please enter your username');
-     } if (titleInput.value != '') {
-          localStorage.setItem('Title', titleInput.value);
-     } else {
-          alert('Please enter a title for your post');
-     } if (contentInput.value != '') {
-          localStorage.setItem('Content', contentInput.value);
-     } else {
-          alert('Content cannot be blank');
+     } if (titleInput.value === '') {
+          alert('Your post needs a title!');
+     } if (contentInput.value === '') {
+          alert('Content is missing!');
      }
 }); 
 

@@ -8,5 +8,7 @@ Built my first blog page that takes user input, saves the input to local storage
 
 -See MIT License in repository-
 
+Live Site URL: https://abbate11.github.io/Blog/
+
 ![Screenshot (13)](https://github.com/Abbate11/Blog/assets/163916459/76844ee7-171d-475c-a046-2e49b4c74afa)
 ![Screenshot (14)](https://github.com/Abbate11/Blog/assets/163916459/b3878c0f-f657-41a7-8599-7ccfcae89809)

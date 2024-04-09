@@ -1,9 +1,23 @@
+:root {
+    color-scheme: light dark;
+}
+
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid;
+    border-color: light-dark(black, white);
+}
+
+header a {
+    color: light-dark(black white);
+    padding: .5em;
+    border: 2px solid;
+    border-color: light-dark(black white);
+    border-radius: 1em;
+    cursor: pointer;
 }
 
 main {
@@ -12,7 +26,6 @@ main {
     align-self: center;
     flex-direction: column;
     width: 100%;
-    border: 1px solid red;
 }
 
 .post {
@@ -22,7 +35,8 @@ main {
     align-items: flex-start;
     flex-direction: column;
     margin: 1em 0;
-    border: 5px solid black;
+    border: 5px solid;
+    border-color: light-dark(black, white);
 }
 
 .title {
@@ -38,5 +52,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 5px dashed black;
+    gap: 1em;
+    border-top: 5px dashed;
+    border-color: light-dark(black, white);
 }
+
+footer a {
+    font-size: larger;
+    color: rgb(44, 177, 133);
+}
+

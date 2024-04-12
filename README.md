@@ -2,7 +2,7 @@
 
 ## Description
 
-Built my first blog page that takes user input, saves the input to local storage, and then appends the information to a second page where the information is formatted in a blog post. Each new post is appended to the page while saving previous posts. I also added a light/dark mode toggle button to change themes.  Due to time restaints, I wasn't able to get the styling as nice as I would like. But I wanted to make sure the js functionality was working above all else. 
+Built my first blog page that takes user input, saves the input to local storage, and then appends the information to a second page where the information is formatted in a blog post. Each new post is appended to the page while saving previous posts. I also added a light/dark mode toggle button to change themes.  Due to time restaints, I wasn't able to get the styling as nice as I would like. But I wanted to make sure the js functionality was working above all else. Still some bugs, but baseline functionality should be there.
 
 ## License
 
